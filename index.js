@@ -37,8 +37,8 @@ class Exercice {
 
     setTimeout(() => {
       if (this.minutes === 0 && this.seconds == "00") {
-        this.index++;
         this.ring();
+        this.index++;
         if (this.index < exerciceArray.length) {
           this.minutes = exerciceArray[this.index].min;
           this.seconds = 0;
